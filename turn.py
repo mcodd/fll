@@ -33,7 +33,7 @@ def turn(deg, kerbal_factor = 3):
     while m.get_yaw_angle() >= deg:
         y = m.get_yaw_angle()
         print("turn at:{}".format(y))
-    go_stop()
+    pair_stop()
     wait_for_seconds(0.1)
     y = m.get_yaw_angle()
     if y >= deg - kerbal_factor and y <= deg + kerbal_factor:
@@ -44,7 +44,7 @@ def turn(deg, kerbal_factor = 3):
     while m.get_yaw_angle() <= deg:
         y = m.get_yaw_angle()
         print("turn at:{}".format(y))
-    go_stop()
+    pair_stop()
     wait_for_seconds(0.1)
     y = m.get_yaw_angle()
     if y >= deg - kerbal_factor and y <= deg + kerbal_factor:
