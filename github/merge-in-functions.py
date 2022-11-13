@@ -27,7 +27,7 @@ files=os.listdir('functions')
 files.sort()
 
 with open(FUNCTIONS_FILE, 'a') as ff:
-    skip_documentation = [ 'easing_functions.py', 'test_function.py', 'party_mode.py' ]
+    skip_documentation = [ 'easing_functions.py', 'test_function.py', 'party_mode.py', 'zz_run_one.py', 'zz_run_two.py', 'zz_run_three.py' ]
     documentation_lines = []
     for function_filename in files:
         write_to_combined_file = False
